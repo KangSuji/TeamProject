@@ -1,0 +1,62 @@
+body{margin: 0%;}
+.clear {clear: both;}
+#wrap{width:100%;}
+#header_base{position: relative; width: 100%; height: 150px; top: 0%; border-bottom: 1px solid black;text-align: center;}
+#header{position: relative; width: 50%; height: 150px; margin: 0 auto; text-align: center;line-height: 150px; }
+#logout_btn{position: absolute; width:100px; height: 30px; background: #061f5c; color: white;border-radius: 3px; right: 0%;bottom: 50%;}
+
+/* footer */
+#footer_base{position: absolute; width: 100%; height: 200px; background: #061A37; bottom: -50%;}
+#footer{position: relative; width: 70%; height: 200px; margin: 0 auto;}
+#footer_menu{position: absolute; width: 100%; height: 30%;  top: 0%; color: white; font-size: 80%;}
+#Bodeum_Copyright{position: absolute; width: 100%; height: 70%; bottom: 0%;color: white;}
+        
+#footer_menu li{list-style: none; float: left;border-right: 1px solid white; }
+#footer_menu li:last-child{border-style: none;}
+        
+#Bodeum_Copyright li{list-style: none; float: left;border-right: 1px solid #667284; margin-right: 5px; color: #667284;}
+
+/*sub_menu*/
+nav#sub_menu {float: left; margin-right: 10px; margin-left:10%;}
+nav#sub_menu ul li { list-style-type: none;margin-top: 10px;}
+nav#sub_menu a {
+ text-decoration: none;
+ color: #666;border-bottom: 1px dotted #999;
+ display: block;
+ width: 100px;
+ height: 25px;
+ padding: 5px;
+}
+nav#sub_menu a:hover {
+ border-bottom: 1px solid black;
+}
+nav#sub_menu h1 {
+ padding: 5px;
+ border-bottom: double;
+}
+nav#sub_menu ul {margin-left: -20px;}
+
+
+/* table css */
+.productList_base{position: relative; width: 1000px;  margin: 0 auto;text-align: left;}
+table{width: 900px; border-collapse: collapse;
+text-align: center; margin-top: 10px; margin-bottom:20px; border: 1px solid #e8e8e8;}
+tr,th,td{border-bottom: 1px solid #e8e8e8;}
+td{text-align:left;border:1px solid #f3f3f3;}
+th{background: #f3f3f3;margin-right:10px;}
+tr,th{height: 20px;}
+a{text-decoration:none; color:black;}
+a:hover{border-bottom:1px solid navy;}
+
+#product_list_head{text-align:left;}
+#member_list_table td{text-align:center; }
+#orderList tr,th{text-align:left; border:1px solid #f3f3f3;}
+/* admin qna css */
+	#qna_answer_base{position: relative; width: 1000px;  margin: 0 auto;text-align: left;}
+	#qna_answer_base table{width: 900px; border-collapse: collapse;
+	    text-align: center; margin-top: 10px; margin-bottom:20px; border: 1px solid #e8e8e8;}
+	#qna_answer_base tr,th,td{border-bottom: 1px solid #e8e8e8;}
+	#qna_answer_base td{text-align:center;border:1px solid #f3f3f3;}
+	#qna_answer_base th{background: #f3f3f3;margin-right:10px;}
+	#qna_answer_base tr,th{height: 20px;}
+	#qna_answer_table{}

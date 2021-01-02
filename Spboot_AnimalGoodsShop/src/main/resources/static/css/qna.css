@@ -1,0 +1,48 @@
+    /* qnaList */
+    #bodeum_qna_body {width:900px; margin-left: 550px;}
+        
+    #bodeum_qna_body h2 {font-size: 20px}
+        
+    table#bodeum_qna_table { border-collapse: collapse; border-top: 2px solid black; border-bottom: 1px solid grey;
+        width: 100%; margin-bottom: 20px;}
+
+    table#bodeum_qna_table th, td {
+	border-bottom: 1px dotted #333; text-align: center; height: 30px; width:1200px;}
+        
+    #bodeum_qna_button{position:relative; margin:70px auto; width:180px; height:50px; text-align:center;}
+        
+    #bodeum_qna_next_button{position:relative; margin:0px auto; width:180px; height:45px; background:#061F5C; line-height:45px; text-align:center; color: white; top: 0px; float: left; border-radius:20px 20px 20px 20px;}
+    #bodeum_qna_next_button:hover{background: #54C0E1;} 
+    
+    /* qnaView */
+            #bodeum_qna_view_body {width:900px; margin-left: 550px;}
+        
+        #bodeum_qna_view_body h2 {font-size: 20px}
+        
+        
+        .qna_view_textbox{position:relative; float:left; width:100px; height:38px; font-weight:bold; line-height:38px;}
+        .qna_view_textbox_2{position:relative; float:left; width:100px; height:66px; font-weight:bold; line-height:66px;}
+        .qna_view_textbox_3{position:relative; float:left; width:100px; font-weight:bold;}
+        
+    #bodeum_qna_view_next_button{position:relative; margin:0px auto; width:180px; height:45px; background:#061F5C; line-height:45px; text-align:center; color: white; top: 0px; float: left; border-radius:20px 20px 20px 20px;}
+    #bodeum_qna_view_next_button:hover{background: #54C0E1;}
+        
+    #bodeum_qna_view_button{position:relative; margin:70px auto; width:180px; height:50px; text-align:center;}
+    
+    /* qnaWrite */
+        #bodeum_qna_write_body {width:900px; margin-left: 550px;}
+        
+        #bodeum_qna_write_body h2 {font-size: 20px}
+        
+        table#bodeum_qna_write_table { border-collapse: collapse; border-top: 2px solid black; border-bottom: 1px solid grey;
+        width: 100%; margin-bottom: 20px;}
+        
+        .qna_write_textbox{position:relative; float:left; width:100px; height:38px; font-weight:bold; line-height:38px;}
+        .qna_write_textbox_2{position:relative; float:left; width:100px; height:66px; font-weight:bold; line-height:66px;}
+        .qna_write_textbox_3{position:relative; float:left; width:100px; font-weight:bold;}
+        .qna_write_small_box{position:relative; float:left; width:230px; height:38px; background:white; border:1px solid silver; margin-right:5px; text-align:center; line-height:38px;}
+        
+        .qna_write_next_button{position:relative; margin:0px auto; width:180px; height:45px; background:#061F5C; line-height:45px; text-align:center; color: white; top: 0px; float: left; border-radius:20px 20px 20px 20px; margin-left: 30px;}
+        .qna_write_next_button:hover{background: #54C0E1;} 
+        
+        #qna_write_view_button{position:relative; margin:70px auto; float: center; height:50px; text-align:center; margin-left: 730px;}

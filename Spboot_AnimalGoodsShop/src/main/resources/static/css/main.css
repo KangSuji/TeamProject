@@ -1,0 +1,67 @@
+
+  body{margin: 0;}
+        #main_base{position: relative; width: 100%; background: #f3f3f3;}
+        
+        #banner{position:relative; margin:0 auto; width:1920px; height:480px;float: left; overflow: hidden;}
+        #banner_img_list{position:relative; top:0px; left:0px; width:5790px; height:480px; float: left;}
+        #banner_img_list_div_1{position:relative;float: left; width:1920px; height:480px;}
+        #banner_img_list_div_2{position:relative;float: left; width:1920px; height:480px;}
+        #banner_img_list_div_3{position:relative;float: left; width:1920px; height:480px;}
+        
+        #remote_base{position: relative;width:100%; height:50px;float: left; top: -50px; text-align: center;}
+        #remote_area{position: relative;width: 200px; height: 50px; margin: 0 auto; line-height: 50px; text-align: center;}
+        .remote{position: relative; float:left;text-align: center; margin-right: 10px;line-height: 50px; left: 65px;}
+        
+        #new{position: relative; width: 100%; height: 500px;float: left;}
+        #new_title_area{position: relative; width: 1200px; height: 70px; margin: 0 auto;}
+        #new_title_text{position: relative; width: 130px; height: 70px; font-size: 170%; margin: 0 auto; text-align: center;line-height: 70px;
+            text-decoration-line: underline;text-underline-position: under;}
+        #new_product_area{position: relative; width: 1300px; height: 590px;  margin: 0 auto;margin-top: 20px;}
+        .new_product_img{position: relative; width: 285px; height: 380px; float: left; margin-right: 20px; }
+        .new_imgs{width: 285px; height: 285px; border: 1px solid gray;}
+        .new_title{width: 285px; height: 30px; margin-top: 10px; font-size: 90%;font-weight: bold;}
+        .new_price{width: 285px; height: 40px; margin-top: 10px; font-size: 110%;text-align: center; font-weight: bold;color: #061f5c;}
+        #new_learn_more{position: relative; width: 500px;height: 50px; text-align: center; margin: 0 auto;top: -160px;}
+        
+        .learn_more_btn{width: 175px; height: 45px; background: #269cd3; color: white;text-align: center;
+            line-height: 45px;font-size: 110%; border-radius: 50px; font-weight: bold;cursor: pointer; border: 1px solid #269cd3;}
+        
+        
+        #best{position: relative; width: 100%; height: 500px;float: left; background: #f3f3f3;}
+        #best_title_area{position: relative; width: 1200px; height: 70px; margin: 0 auto;}
+        #bset_title_text{position: relative; width: 130px; height: 70px; font-size: 170%; margin: 0 auto; text-align: center;line-height: 70px;
+            text-decoration-line: underline;text-underline-position: under;}
+        #best_img_area{position: relative; width: 1300px; height: 590px;  margin: 0 auto;margin-top: 20px; }
+        .best_product_img{position: relative; width: 285px; height: 380px; float: left; margin-right: 20px; }
+        .best_imgs{width: 285px; height: 285px; border: 1px solid gray;}
+        .best_title{width: 285px; height: 30px; margin-top: 10px; font-size: 90%;font-weight: bold;}
+        .best_price{width: 285px; height: 40px; margin-top: 10px; font-size: 110%;text-align: center; font-weight: bold;color: #061f5c;}
+        #best_learn_more{position: relative; width: 500px;height: 50px; text-align: center; margin: 0 auto;top: -160px;}
+        
+        #product_more_btn{z-index: 99;}
+ 
+        
+      
+        a{color: black;}
+        a:link { text-decoration: none; }
+        /*��ư CSS*/
+        button{cursor: pointer;}
+        
+        /*cupon css*/
+    .popup {display: none; position: fixed; left: 50%; top: 50%; z-index: 100; width: 600px;height: 400px;transform: translate(-50%, -50%); background: #fff; box-sizing: border-box; }
+        
+        .cupon_popup_dim{display: none; position: fixed; left: 0; top: 0; z-index: 99; width: 100%; height: 100%; background: rgba(0,0,0,0.5);}
+        
+        .popup h2 {font-size: 36px; color: #061f5d; text-align: center;  border-bottom: 3px solid #444;padding-bottom: 20px;}
+        .popup .cupon_con {padding:  40px ;}
+        .cupon_con{ /*border-bottom: 1px solid #e8e8e8;*/}
+        .cupon th {font-size: 15 px; color: #222; text-align: left; font-weight: normal; }
+        
+        #cupon_num {width:150% ; height: 48px; font-size: 15px; color: #373737; border: 1px solid #e9e9e9; background: #fff; text-decoration: none; vertical-align: middle; border-radius: 3px;}
+        .popup th {padding-right: 50px;}
+        
+        #cupon_submit_btn {display: inline-block; width: 170px; height: 50px; line-height: 50px; text-align: center;  background: #061f5d; color: #fff;border-radius: 30px; margin-right:20px; cursor: pointer;}
+        #cupon_close_btn{display: inline-block; width: 170px; height: 50px; line-height: 50px; text-align: center;  background: gray; color: #fff;border-radius: 30px;}
+        #btn_center{text-align: center;cursor: pointer;margin:0 auto;}
+        .popup a {text-decoration: none; }
+        .popup a:link{text-decoration: none;}

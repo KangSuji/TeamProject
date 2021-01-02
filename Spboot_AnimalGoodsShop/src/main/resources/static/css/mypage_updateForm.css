@@ -1,0 +1,52 @@
+  #my_edit_profile_top_margin{position:relative; width:100%; height:80px;}
+        
+    #my_edit_profile_menu{position:relative; width:15%; height:480px; border:1px solid grey; margin-left: 10%; float: left;}
+        
+    #my_deit_profile_my_name_box{position:relative; width:80%; height:150px; border:1px solid grey; margin:0 auto; background: #269CD3; border-radius:50px 50px 50px 50px; margin-top: 25px;}
+    #my_deit_profile_my_name_text{position:relative; width:100%; height:150px;  margin:0 auto; font-size:130%; text-align:center; font-weight:bold; margin-top: 40px;}
+        
+    .my_edit_information_button{position:relative; margin:15px auto; width:110px; height:35px; background-color: #EAEAEA; line-height:35px; text-align:center; border: 1px solid blue; border-radius:20px 20px 20px 20px;}
+    
+    #my_edit_profile_menu_text_box_top{position:relative; width:100%; height:50px; font-weight:bold; line-height:50px; text-align:left; border-top:1px dotted grey; font-size: 100%;}
+        
+    #my_edit_profile_menu_text_box{position:relative; width:100%; height:50px; font-weight:bold; line-height:50px; text-align:left;font-size: 100%;}
+        
+    #my_edit_profile_menu_text_box_bottom{position:relative; width:100%; height:50px; font-weight:bold; line-height:50px; text-align:left; border-bottom:1px dotted grey; font-size: 100%;}
+    
+    .my_edit_profile_icon_img{position:relative; width:25%; height:90%; float: left; text-align:center; margin-top: 5px; left: 20px;}
+    .my_edit_profile_icon_text{position:relative; width:70%; height:100%; float: right; font-size:100%;}
+        
+    #my_edit_profile_title{position:relative; width:55%; height:50px; font-weight:bold; line-height:50px; text-align:left;margin-left: 30%; font-size: 120%;}
+    
+    #my_edit_profile_body{position:relative; width:55%; height:600px; margin-left: 30%; border-top: 1px solid black; border-bottom: 1px solid black;}
+    
+    
+    #my_edit_profile_body_left{position: relative; width:49%; height: 746px; float: left;}
+    
+    .my_edit_profile_text_box{position: relative; margin:0 auto; width:595px; height:30px;font-size:90%; text-align:left; font-weight:bold; line-height:30px; }
+    .my_edit_input_text_id{position: relative; margin:0 auto; width:310px; height:40px;font-size:100%; text-align:left; background:white; border:1px solid silver; line-height:40px; color:gray; margin-left: 0px;}
+        
+    .my_edit_profile_big_box{position: relative; margin:0 auto; width:400px; height:40px;font-size:100%; text-align:left; background:white; border:1px solid silver; line-height:40px; color:gray; margin-left: 0px;}
+    .my_edit_profile_big_box_no_border{position: relative; margin:0 auto; width:400px; height:40px;font-size:100%; text-align:left; background:white; line-height:40px; color:gray; left: -54px;}
+        
+    .my_edit_profile_small_box{position:relative; float:left; width:124px; height:38px; background:white; border:1px solid silver; margin-right:5px; text-align:center; line-height:38px;}
+    
+    .my_edit_profile_small_title{position: relative; margin:0 auto; width:595px; height:30px;font-size:80%; text-align:left; font-weight:bold; line-height:30px; }
+    
+    .my_edit_text_small_box_line_delete{font-size:100%; outline:none; border:0px;}
+    #my_edit_profile_select_box_line_delete{width:110px; border:0px; font-size:100%;}
+    #my_edit_text_box_line_delete{font-size:70%; outline:none; border:0px;}
+    
+        
+    #my_edit_profile_body_right{position: relative; width:50%; height: 746px; top:0px; float: right}
+        
+    .my_edit_profile_user_id_check_box{position: relative; width:80px; height:35px; border: 1px solid black; float: right; text-align:center; line-height:35px; margin-top: -42px; margin-right: 120px; font-size:70%;}
+    .my_edit_profile_user_id_check_box:hover{background: #231816; color: white; }
+    
+    #my_edit_profile_button_title{position:relative; width:55%; height:50px; font-weight:bold; line-height:50px; margin-left: 30%; font-size: 120%;}
+    .my_edit_profile_next_button{position:relative; margin:0px auto; width:200px; height:50px; background:#061F5C; line-height:50px; text-align:center; color: white; top: 0px; float: left; border-radius:20px 20px 20px 20px; margin-left: 40%;}
+    .my_edit_profile_next_button:hover{background: #54C0E1;}
+        
+        
+    .my_edit_profile_big_box_no_border_2{position: relative; margin:0 auto; width:400px; height:40px;font-size:100%; text-align:left; background:white; line-height:40px; color:gray; left: 5px; float: left; margin-left: -15px;}
+    .my_edit_profile_input_box{position:relative; width:100px; height:25px;border:1px solid silver; margin-left: 10px;}

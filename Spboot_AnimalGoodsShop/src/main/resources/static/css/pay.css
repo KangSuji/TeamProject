@@ -1,0 +1,43 @@
+#payform{letter-spacing: -1px;}
+        #payview{position: relative; width: 1200px; margin: auto;}
+        #payviewright{position: fixed; margin-top: 100px;
+        float: right; width: 350px; background-color: #F7F7F7; right: 350px;}
+        #payrighttitle{position: relative; height: 30px; width: 300px; border-bottom: 1px solid; font-size: 110%; font-weight: bold; margin: auto; margin-top: 20px; margin-bottom: 15px;}
+        .payrightdetails{position: relative; width: 300px; margin: auto; height: 30px; border-bottom: 1px solid #E2E2E2; margin-top: 10px;}
+        .prdd{float: left; font-size: 95%; letter-spacing: -2px;}
+        .prdn{float: right;}
+        #paybutton{position: relative; width: 300px; height: 40px; border: none; background-color: #061F5C; color: white; left: 25px; margin-top: 20px; margin-bottom: 20px; border-radius: 20px; transition: 0.5s; font-size: 100%; font-weight: bold;}
+        #paybutton:hover{background-color: #54C0E1; cursor: pointer;}
+        
+        #payviewleft{float: left; position: relative;  width: 820px;}
+        #paytitle{position: relative; margin-top: 70px; font-size: 150%; letter-spacing: -1px; font-weight: bold; margin-bottom: 15px;}
+        .payitemlist1{position: relative; border-bottom: 1px solid; height: 30px; font-weight: bold; margin-bottom: 20px;}
+        
+        #prdthead{border-bottom: 1px solid;}
+        table{position: relative;}
+        .payprddetail{width: 500px; border-bottom: 1px solid #eee;}
+        .payprdprice{position: relative; width: 160px; border-bottom: 1px solid #eee;}
+        .paytabledelivcost{position: relative; width: 160px; border-bottom: 1px solid #eee;}
+        .payprdcentering{  margin: 0; position: absolute; top: 50%; left:50%; transform: translate(-50%, -50%);}
+        .paysectionlastline{margin-bottom: 40px;}
+        
+        .paypersonaldetailsection{position: relative; height: 42px;}
+        .paypersonaldetaillabel{position: relative; height: 40px; line-height: 40px; width: 170px;  float: left;}
+        .payinputname{border: 1px solid #D7D7D7; height: 30px; width: 170px;}
+        .payphoneinput{width: 100px; height: 30px; border: 1px solid #D7D7D7;}
+        #payphoneselect{width: 100px; height: 34px; border: 1px solid #D7D7D7;}
+        .payemailinput{width: 150px; height: 30px; border: 1px solid #D7D7D7;}
+        .payemailselect{width: 100px; height: 34px; border: 1px solid #D7D7D7; margin-left: 10px;}
+        #paydelivdetail1{position: relative; height: 42px;}
+        #pdd11{position: relative; height: 30px; width: 120px; border: 1px solid; margin-right: 20px; float: left; text-align: center; line-height: 30px; letter-spacing: -1px; font-size: 80%}
+        #pdd12{position: relative; height: 30px; width: 120px; float: left; border: 1px solid #D7D7D7; text-align: center; line-height: 30px; letter-spacing: -1px; font-size: 80%;}
+        #pdd11:hover{cursor: pointer;}
+        #pdd12:hover{cursor: pointer;}
+        #paymentmethoddetail{position: relative; height: 42px;}
+
+        .paypaymethod{position: relative; width: 100px; letter-spacing: -3px; border: 1px solid; font-size: 90%; height: 30px; text-align: center; line-height: 30px; float: left; margin-right: 10px; transition: 0.2s;}
+        .paypaymethod:hover{cursor: pointer;}
+        
+        #payprddetailimg{ position: relative; height: 80px; width: 80px; margin-left: 30px; margin-top: 20px; margin-bottom: 20px; float: left;}
+        
+        #payprdinnerdetail{position: absolute; height: 80px; width: 300px; left: 140px; top: 42px;}

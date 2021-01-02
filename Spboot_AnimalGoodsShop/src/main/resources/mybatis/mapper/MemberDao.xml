@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.spboot.shop.dao.IMemberDao">
+	<select id="getCuponVO" resultType="com.spboot.shop.dto.CuponVO">
+		select * from cupon where name=#{param1}
+	</select>
+	<update id="updateId">
+		update cupon set id=#{param1} where name=#{param2}
+	</update>
+	<update id="insertPoint">
+		update member set point=point+#{param1} where id=#{param2}
+	</update>
+	<update id="updateMember">
+		Update member set pwd=#{pwd}, zip_num=#{zip_num}, address=#{address}, 
+		email=#{email}, phone=#{phone},gender=#{gender},birth=#{birth} where id = #{id}
+	
+	</update>
+	<select id="selectAddressByDong" resultType="com.spboot.shop.dto.AddressVO">
+		select * from address where dong like '%'||#{param1}||'%'
+		</select>
+	<update id="resetPassword">
+		update member set pwd=#{param2} where id = #{param1}
+	</update>
+	<select id="getMemberByemail" resultType="com.spboot.shop.dto.MemberVO">
+		select*from member where email=#{param1}
+	</select>
+	<select id="getMemberByphone" resultType="com.spboot.shop.dto.MemberVO">
+		select*from member where phone=#{param1}
+	</select>
+	<select id="getMember" resultType="com.spboot.shop.dto.MemberVO">
+		select*from member where id=#{param1}
+	</select>
+	<insert id="insertMember">
+	 insert into member(id, pwd, name, email, gender, birth, phone) 
+	 values (#{id}, #{pwd}, #{name}, #{email}, #{gender},#{birth}, #{phone})
+	</insert>
+</mapper>

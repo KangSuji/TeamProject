@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.spboot.shop.dao.ICartDao">
+	<delete id="deleteCart">
+		delete from cart where cseq=#{param1}
+	</delete>
+	<select id="getAllCountCart" resultType="_int">
+		select count(*) as count from cart
+	</select>
+	<select id="listCart" resultType="com.spboot.shop.dto.CartVO">
+		select * from 
+				(select * from 
+				(select rownum as row_num, cart_view.* from cart_view 
+				where mid=#{param3} order by cseq desc) 
+				where row_num&gt;=#{param1}) 
+				where row_num&lt;=#{param2}
+	</select>
+	<select id="listAllCart" resultType="com.spboot.shop.dto.CartVO">
+		select * from cart_view where mid=#{param1} order by cseq desc
+	</select>
+	<insert id="insertCart">
+	insert into cart(cseq, mid, pseq, quantity,pcolor,psize) 
+				values(cart_seq.nextval,#{mid}, #{pseq}, #{quantity},#{pcolor},#{psize}) 
+	</insert>
+	
+</mapper>

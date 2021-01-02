@@ -1,0 +1,30 @@
+ #findid_top_margin{margin-top: 90px;}
+        #findidbody{position:relative;  height: 450px; width: 500px; margin: auto; background-color: white; opacity: 80%;}
+        #findidbodytitle{text-align: center;height: 90px; line-height: 90px; font-size: 120%; font-weight: bold;}
+        #findidtab{position: relative; width: 400px; margin: auto;}
+        #findidemailtab{float: left; border: 1px solid black; width: 200px; text-align: center; height:30px; line-height: 30px; border-bottom: 1px white;}
+        #findidphonetab{border: 1px solid silver; border-bottom: 1px solid black; text-align: center; width: 200px; position: absolute; left: 200px; height: 30px; line-height: 30px;}
+        
+        #findidemailform{position: absolute; width: 400px; margin: auto; margin-top: 70px; left: 50px;}
+        #findidemailemailtext{margin-bottom: 5px; margin-top: 5px;}
+        .findidemailtextarea{height: 30px; width: 394px; margin-top: 5px; margin-bottom: 10px; border: 1px solid #D7D7D7;}
+        .findidemailtextarea2{height: 30px; width: 186px;margin-top: 5px; margin-bottom: 10px; border: 1px solid #D7D7D7;}
+        .findidemailtextarea3{height: 30px; width: 123px;margin-top: 5px; border: 1px solid #D7D7D7;}
+        
+        #findidbutton{border: 1px solid #061F5C; text-align: center; height:40px; line-height: 40px; color: white; background-color: #061F5C; transition: 0.5s; margin-top: 50px; border-radius: 20px;}
+        #findidbutton:hover{background-color: mediumaquamarine; border: 1px solid mediumaquamarine; cursor: pointer;}
+        #findidbutton2{border: 1px solid #061F5C; text-align: center; height:40px; line-height: 40px; color: white; background-color: #061F5C; transition: 0.5s; margin-top: 60px; border-radius: 20px;}
+        #findidbutton2:hover{background-color: mediumaquamarine; border: 1px solid mediumaquamarine; cursor: pointer;}
+        
+        
+        #findidphoneform{position: relative; width: 400px; margin: auto; margin-top: 70px; visibility: hidden;}
+        #findidphonedropbox{border: 1px solid #D7D7D7; float: left; height:35px; width: 104px; line-height: 35px; margin-top: 5px;}
+        
+        #findidphonedropmenu{position: absolute; background-color: white; width: 104px; border: 1px solid black; visibility: hidden;}
+        
+        #findidphonedropmenu div:hover{background-color: skyblue; cursor: pointer;}
+        #findidphonedropbox:hover{cursor: pointer;}
+        #findidemailtab:hover{cursor: pointer;}
+        #findidphonetab:hover{cursor: pointer;}
+        
+        #findidphonediv{margin-top: 5px;}

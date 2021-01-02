@@ -1,0 +1,11 @@
+ .resetpass_body_side {margin-left: 650px; padding:  40px ;}
+        
+    .resetpass_body_side h2 { width:500px; height:60px; font-size: 26px; color: #061f5d;   border-bottom: 3px solid #444; padding-bottom: 15px;}
+        
+    .resetpass_body_side tr {font-size: 17px;}
+    
+    .resetpass_passbox{}
+    
+    .resetpass_passbox td {border: 1px solid grey;}
+        
+    #resetpass_button {display: inline-block;  line-height: 65px; font-size: 14px; text-align: center;  background: #061f5d; color: #fff; border-radius: 3px;}

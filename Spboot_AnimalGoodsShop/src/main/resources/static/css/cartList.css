@@ -1,0 +1,48 @@
+  body{margin: 0;}
+    #shopping_cart_base{position: relative; width: 1200px; height: 750px;margin: 0 auto;}
+    #shopping_cart_left{position: relative; width: 840px; height: 800px;left: 0px;float: left;}
+    #shopping_cart_title{position: relative; width: 820px; height: 150px;border-bottom: 2px solid black;}
+    
+    #shopping_cart_title_1{position: absolute; width: 820px; height: 120px;font-size: 200%; font-weight: bold; line-height: 180px;}
+    #shopping_cart_title_2{position: absolute; width: 820px; height: 30px; top: 120px; font-size:115%;font-weight: bold;}
+    
+    
+    /*장바구니 테이블 CSS*/
+    #shopping_cart_left table {width: 820px;border-collapse: collapse;}
+  /*   #shopping_cart_list_table tr,td{border-bottom: 1px solid gray; text-align: center; padding: 10px;} */
+    #shopping_cart_list_table td{font-size: 90%; font-weight: bold;}
+    #shopping_cart_list_table img{width: 100px; height: 100px;}
+    #shopping_cart_list_table a:link { text-decoration: none; color: black; font-weight: bold;}
+    #shopping_cart_select_box{width:70px; height: 30px;}
+    #shopping_cart_list_text{text-align: left;}
+    .shopping_cart_delete_btn{width: 25px; height: 25px; background: white; border: 1px solid silver; border-radius: 5px; color: silver;}
+    
+    /*결제 총액영역*/
+    #shopping_cart_right{position: relative; width: 350px; height: 360px; background: #f7f7f7; right: -850px;top: 120px;}
+    #shopping_cart_right_title{position: absolute; width: 300px; height: 55px;text-align: left;line-height: 55px; font-size: 110%;
+        border-bottom: 1px solid black;margin-left: 20px;}
+    #shopping_cart_sum_price{position: absolute; width: 300px; height: 55px; top: 55px; border-bottom: 1px solid silver;margin-left: 20px;}
+    #shopping_cart_price_title{position: relative; width: 150px; height: 55px; line-height: 55px;float: left;}
+    #shopping_cart_price_area{position: absolute; width: 150px; height: 55px; line-height: 55px; right: 0px;text-align: right;}
+    
+    
+    #shopping_cart_delivery_price{position: absolute; width: 300px; height: 55px; top: 110px; border-bottom: 1px solid silver;margin-left: 20px;}
+    #shopping_cart_delivery_title{position: relative; width: 150px; height: 55px; line-height: 55px;float: left;}
+    #shopping_cart_delivery_price_area{position: absolute; width: 150px; height: 55px; line-height: 55px; right: 0px;text-align: right;}
+    
+    #shopping_cart_total_price{position: absolute; width: 300px; height: 55px; top: 165px; margin-left: 20px;}
+    #shopping_cart_total_title{position: relative; width: 150px; height: 55px; line-height: 55px;float: left;}
+    #shopping_cart_total_price_area{position: absolute; width: 150px; height: 55px; line-height: 55px; right: 0px;text-align: right;
+    font-size: 150%; color:#061f5c; font-weight: bold;}
+    
+    /*주문하기 버튼*/
+    #shopping_cart_order_btn{position: absolute; width: 300px; height: 70px; top: 230px;margin-left: 20px;}
+    #shopping_cart_order_button{width: 300px; height: 50px; border-radius: 50px; background: #061f5c; color:white; outline: none; border: none;
+        font-size: 120%; font-weight: bold;}
+    /*쇼핑계속하기 버튼*/
+    #shopping_cart_more_shopping{position: absolute; width: 300px; height: 70px; top: 300px;margin-left: 20px;}
+    #shopping_cart_more_shopping_btn{width: 300px; height: 50px; border-radius: 50px; color:black;
+        outline: none; border: 1px solid black;font-size: 120%; font-weight: bold;}
+    
+    /*배송 주의사항*/
+    #shopping_cart_warning_text{font-size: 80%; font-weight: bold; color: darkgray;}

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.spboot.shop.dao.IAdminDao">
+	
+	<select id="adminCheck" resultType="com.spboot.shop.dto.WorkerVO">
+		select * from worker where id=#{param1}
+	</select>
+	<select id="getAllCountProduct" resultType="_int">
+		select count(*) from product
+	</select>
+	<select id="listProduct" resultType="com.spboot.shop.dto.ProductVO" parameterType="com.spboot.shop.dto.Admin_Paging">
+		 select * from (select * from (
+    	 select rownum as row_num, m.* from (select * from product order by pseq desc) m
+     	 ) where row_num &gt;= #{param1} 
+     	 ) where row_num &lt;= #{param2}
+	</select>
+	<select id="getProduct" resultType="com.spboot.shop.dto.ProductVO">
+		select * from product where pseq=#{param1}
+	</select>
+	<select id="getColor" resultType="string">
+		select distinct product_color from product_color where pseq=#{param1}
+	</select>
+	<select id="getSize" resultType="string">
+		select distinct product_size from product_size where pseq=#{param1}
+	</select>
+	<insert id="insertProduct"  >
+		insert into product(pseq, kind, subkind, pname, price1,price2,price3,content, image1, image2, bestyn, useyn) 
+		values(product_seq.nextVal,#{kind},#{subkind},#{pname}, #{price1}, #{price2}, #{price3}, #{content}, #{image1}, #{image2}, #{bestyn}, #{useyn})
+	</insert>
+	<select id="getPseq" resultType="int">
+		select max(pseq) from product order by indate desc
+	</select>
+	<insert id="insertColor">
+		insert into product_color(pseq, product_color) values(#{param1},#{param2})
+	</insert>
+	<insert id="insertSize">
+		insert into product_size(pseq, product_size)  values(#{param1},#{param2})
+	</insert>
+	<select id="getAllCountMember" resultType="_int">
+		select count(*) as count from member
+	</select>
+	<select id="getMember" resultType="com.spboot.shop.dto.MemberVO" parameterType="com.spboot.shop.dto.Admin_Paging">
+		 select * from (select * from (
+    	 select rownum as row_num, m.* from (select * from member order by indate desc) m
+     	 ) where row_num &gt;= #{param1} 
+     	 ) where row_num &lt;= #{param2}
+	</select>
+	<select id="getAllCountOrder" resultType="_int">
+		select count(*) as count from order_view 
+	</select>
+	<select id="listOrder" resultType="com.spboot.shop.dto.OrderVO" parameterType="com.spboot.shop.dto.Admin_Paging">
+		  select * from (select * from (
+    	 select rownum as row_num, m.* from (select * from order_view order by  result, odseq desc) m
+     	 ) where row_num &gt;= #{param1} 
+     	 ) where row_num &lt;= #{param2}
+	</select>
+	<update id="editProduct" parameterType="com.spboot.shop.dto.ProductVO">
+		update product set  kind=#{kind}, subkind=#{subkind}, pname=#{pname}, price1=#{price1} ,
+		price2=#{price2} ,price3=#{price3} , content=#{content} , image1=#{image1}, image2=#{image2}, bestyn=#{bestyn} ,useyn=#{useyn}  where pseq=#{pseq}
+	</update>
+	<delete id="deleteColor">
+		delete from product_color where pseq=#{param1}
+	</delete>
+	<delete id="deleteSize">
+		delete from product_size where pseq=#{param1}
+	</delete>
+	<delete id="deleteProduct">
+		delete from product where pseq=#{param1}
+	</delete>
+	<update id="updateOrderResult">
+		update order_detail set result='2' where odseq=#{param1}
+	</update>
+	<select id="getAllCount_qna" resultType="_int">
+		select count(*) as count from qna
+	</select>
+	<select id="listQna" resultType="com.spboot.shop.dto.QnaVO" parameterType="com.spboot.shop.dto.Admin_Paging">
+		 select * from (select * from (
+    	 select rownum as row_num, m.* from (select * from qna order by  qseq  desc) m
+     	 ) where row_num &gt;= #{param1} 
+     	 ) where row_num &lt;= #{param2}
+	</select>
+	<select id="getQna" resultType="com.spboot.shop.dto.QnaVO">
+		select * from qna where qseq=#{param1}
+	</select>
+	<update id="updateQna">
+		update qna set qreply=#{qreply}, qrep='2' where qseq=#{qseq}
+	</update>
+	<select id="getAllCount_product_qna" resultType="_int">
+		select count(*) as count from product_qna
+	</select>
+	<select id="listProductQna" resultType="com.spboot.shop.dto.Product_QnaVO" parameterType="com.spboot.shop.dto.Admin_Paging">
+		 select * from (select * from (
+    	 select rownum as row_num, m.* from (select * from product_qna order by  pq_seq desc) m
+     	 ) where row_num &gt;= #{param1} 
+     	 ) where row_num &lt;= #{param2}
+	</select>
+	<select id="getProdcutQna" resultType="com.spboot.shop.dto.Product_QnaVO">
+		select * from product_qna where pq_seq=#{param1}
+	</select>
+	<update id="updateProuctQna">
+		update product_qna set reply=#{reply}, rep='2' where pq_seq=#{pq_seq}
+	</update>
+	
+</mapper>

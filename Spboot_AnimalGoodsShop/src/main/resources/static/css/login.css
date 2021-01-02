@@ -1,0 +1,32 @@
+     
+    #login_body{position:relative; width:1179px; height:519px; margin:0 auto; border:1px solid #E5E5E5; background-color: white; opacity: 90%; margin-bottom:100px;}
+    #loginL{position: relative; width:588px; height: 417px; float: left; border-right: 1px solid #E5E5E5; top:50px;}
+    #loginR{position: relative; width:588px; height: 417px;  top 50px; top:50px; float: left;}
+    #naver_login_button{position:relative; margin:auto; width:370px; height:50px; background:#1EC800;  text-align:center; color: white; border: 1px solid blue;}
+    .naver_img{margin-left: 0px;float: left;}
+    
+    #facebook_login_button{position:relative; margin:10px auto; width:370px; height:50px; background:#4473AA;  text-align:center; color: white;}
+    .naver_img{margin-left: 0px;float: left;}
+    .text1{line-height: 50px;}
+    
+    #cacao_login_button{position:relative; margin:10px auto; width:370px; height:50px; background:#FFEB00;  text-align:center; color: white; }
+    .naver_img{margin-left: 0px;float: left;}
+    .login_text{line-height: 50px;}
+    #login_text_cacao{line-height: 50px; color: black;}
+        
+    .login_underline{margin:0 auto; width:370px; height:10px; font-size:100%; text-align:left; background:white; border:0px dotted #EBEBEB; line-height:40px; color:gray; 
+    border-bottom-style:dotted; border-bottom-width:2px;}
+    
+    .login_textbox{position: relative; border: 1px solid black; width:370px; height: 50px; margin:20px auto; }
+        input{width:240px; height: 30px; border: none;}
+        
+    #login_button{position: relative; border: 1px solid blue; width: 370px; height: 40px; border-radius: 20px; background-color: #092561; margin-left:105px; text-align: center; line-height: 40px; color: white; transition: 0.5s;}
+        #login_button:hover{background-color:mediumaquamarine; border: 1px solid mediumaquamarine; cursor: pointer;}
+        
+    .loginR1{position: relative;  height: 200px; width: 500px;}
+        .loginRcon1{height: 50px; line-height: 50px; font-size: 120%; font-weight: bold; position: relative; left: 70px;}
+        .loginRcon2{height: 50px; line-height: 50px; font-weight: bold; color: gray; position: relative; left: 70px;}
+        #loginRButton1{position: relative; left: 70px; top:30px; border: 1px solid #092561; width: 160px; text-align: center; height: 40px; line-height: 40px; border-radius: 20px; color: white; background-color: #092561; transition: 0.5s;}
+        #loginRButton1:hover{background-color: mediumaquamarine; border: 1px solid mediumaquamarine;cursor: pointer;}
+        .loginRButton2{position: relative; left: 70px; top:30px; border: 1px solid #251A17; width: 160px; text-align: center; height: 40px; line-height: 40px; border-radius: 20px; float: left; margin: 0px 10px 0px 0px; transition: 0.5s;}
+        .loginRButton2:hover{background-color: #251A17; color: white;cursor: pointer;}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.spboot.shop.dao.IQnaDao">
+	<select id="listQna" resultType="com.spboot.shop.dto.QnaVO">
+		select * from qna where mid=#{param1} order by qseq desc
+	</select>
+	<insert id="insertQna">
+		insert into qna (qseq, qsubject, qcontent, mid, qtype) values(qna_seq.nextval, #{qsubject}, #{qcontent}, #{mid}, #{qtype})
+	</insert>
+	<select id="getQna" resultType="com.spboot.shop.dto.QnaVO">
+		select * from qna where qseq=#{param1}
+	</select>
+</mapper>

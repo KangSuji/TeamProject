@@ -1,0 +1,24 @@
+ #findpw_top_margin{margin-top: 90px;}
+        #findpwbody{position: relative; margin: auto; height: 600px; width:500px; border: 1px solid silver; background-color: white; opacity: 85%;}
+        #findpwtitle{text-align: center; height: 70px;  line-height: 90px; font-size: 120%; font-weight: bold; color: #333333}
+        
+        .findpwbiginput{height: 30px; width:394px; margin-top: 5px; border: 1px solid #D7D7D7}
+        .findpwsmallinput{height: 30px; width: 140px; margin-top: 5px;  border: 1px solid #D7D7D7}
+        .findpwmedinput{height: 30px; width: 186px; margin-top: 5px;  border: 1px solid #D7D7D7}
+        
+        #findpwid{position: relative;  height: 50px; width: 400px; margin: auto; color: #333333}
+        #findpwidtext{margin-top: 5px;}
+        
+        #findpwname{position: relative;  height: 50px; width: 400px; margin: auto; margin-top: 20px; color: #333333}
+        
+        #findpwphone{position: relative;  height: 50px; width: 400px; margin: auto; margin-top: 20px; color: #333333}
+        #findpwphoneselect{height: 35px; width: 94px; border:1px solid #D7D7D7; color:#333333;}
+        
+        #findpwemail{position: relative;  height: 105px; width: 400px; margin: auto; margin-top: 40px; color: #333333}
+        #findpwemailselect{height: 35px; width: 400px; margin-top: 10px; border: 1px solid #D7D7D7; color:#888888;}
+        
+        #findpwcontent{position: relative;  width: 400px; margin: auto; margin-top: 30px; text-align: center; font-size: 90%; color: #333333}
+        
+        #findpwbutton{position: relative; width:400px; height: 34px; margin: auto; text-align: center; margin-top: 40px; border: 1px solid #061F5C; line-height: 34px; background-color: #061F5C; color: white; border-radius: 17px;}
+        
+        #findpwemailarrow{position: relative; width:20px; height: 30px; bottom: 34px; left: 373px;}

@@ -1,0 +1,22 @@
+  #product_page_base{position: relative; width: 100%;}
+    
+    #product_page_head{width: 100%; height: 50px; background: #f3f3f3; text-align: left; line-height: 50px;}
+    #product_page_head p{margin-left: 240px; font-size: 70%;font-weight: bold;}
+    /*상품 페이지 제목*/
+    #product_page_title{position: relative;width: 100%; height: 130px;}
+    #page_title_area{position: relative;  width: 1420px; height: 130px;margin: 0 auto;
+        text-align: center; line-height:180px ; font-size: 160%; font-weight: 500; border-bottom: 1px solid black;}
+    /*상품 정렬영역*/
+    #product_sort_lineup{position: relative; width: 100%; height: 50px;margin: 0;}
+    #product_sort_lineup_area{position: relative;width: 1420px; height: 50px; margin: 0 auto;}
+    .lineup_text{float: left;text-align: left; line-height: 50px;font-size: 85%; margin-left: 15px;}
+   
+    /*상품 이미지 CSS*/
+    #product_area{position: relative; width: 1420px; /*height: auto;*/ margin: 0 auto;}
+    .product{position: relative; width:340px; height: 510px;margin-top: 40px; margin-right: 15px; float: left;}
+    .product_img{width: 315px; height: 315px; border: 1px solid #f3f3f3;}
+    .product_title{width: 315px; height: 30px; margin-top: 15px; font-size: 90%;font-weight: bold;}
+    .product_price{width: 315px; height: 40px; margin-top: 30px; font-size: 110%; font-weight: bold;color: #061f5c;}
+    
+    /*상품리스크 페이징 CSS*/
+    #product_page_paging{clear: both;}

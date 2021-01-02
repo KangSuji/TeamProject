@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.spboot.shop.dao.IProductDao">
+	<insert id="getProductQnaWrite">
+		insert into product_qna(pq_seq,pseq,id,kind,subject,content)
+				values(product_qna_seq.nextVal,#{pseq},#{id},#{kind},#{subject},#{content})
+	</insert>
+
+	<select id="getProduct_QnaList"  resultType="com.spboot.shop.dto.Product_QnaVO">
+		select * from product_qna where pseq=#{param1}
+	</select>
+
+	<select id="getColor"  resultType="string">
+		select distinct product_color from product_color where pseq=#{param1}
+	</select>
+	
+	<select id="getSize"  resultType="string">
+		select distinct product_size from product_size where pseq=#{param1}
+	</select>
+	
+	<select id="getProduct"  resultType="com.spboot.shop.dto.ProductVO">
+		select * from product where pseq=#{param1}
+	</select>
+
+	<select id="getAllCountProductBykey" resultType="_int">
+		select count(*) as count from product where pname like '%'||#{param1}||'%'
+	</select>
+	<select id="getAllCountProductBykind" resultType="_int">
+		select count(*) as count from product where kind=#{param1}
+	</select>
+	<select id="getAllCountProductBysubkind" resultType="_int">
+		select count(*) as count from product where kind=#{param1} and subkind=#{param2}
+	</select>
+	<select id="getNewList" resultType="com.spboot.shop.dto.ProductVO">
+		select * from new_pro_view
+	</select>
+	<select id="getBestList" resultType="com.spboot.shop.dto.ProductVO">
+		select * from best_pro_view
+	</select>
+	<select id="listKindProductBykey" resultType="com.spboot.shop.dto.ProductVO">
+		select * from 
+		(select * from  
+		 (select rownum as row_num, product.* from product  
+			 where pname like '%'||#{param1}||'%' order by pseq desc)  
+			 where row_num &gt;=#{param2}) 
+			 where row_num &lt;=#{param3} 
+			 
+	</select>
+	<select id="listKindProductBykind" resultType="com.spboot.shop.dto.ProductVO">
+		select * from 
+		(select * from  
+		 (select rownum as row_num, product.* from product  
+			 where kind=#{param1} order by pseq desc)  
+			 where row_num &gt;=#{param2}) 
+			 where row_num &lt;=#{param3} 
+			 
+	</select>
+	<select id="listKindProductBysubkind" resultType="com.spboot.shop.dto.ProductVO">
+		select * from 
+		(select * from  
+		 (select rownum as row_num, product.* from product  
+			 where kind=#{param1} and subkind=#{param2} order by pseq desc)  
+			 where row_num &gt;=#{param3}) 
+			 where row_num &lt;=#{param4} 
+			 
+	</select>
+</mapper>
