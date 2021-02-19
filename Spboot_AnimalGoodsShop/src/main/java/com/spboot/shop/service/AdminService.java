@@ -33,6 +33,7 @@ public class AdminService implements IAdminService{
 
 	@Override
 	public List<ProductVO> listProduct(int startNum, int endNum, String key) {
+		
 		return iadao.listProduct(startNum,endNum, key);
 	}
 

@@ -10,13 +10,13 @@
 		select * from worker where id=#{param1}
 	</select>
 	<select id="getAllCountProduct" resultType="_int">
-		select count(*) from product
+		select count(*) as count from product where pname like '%'||#{param1}||'%'
 	</select>
 	<select id="listProduct" resultType="com.spboot.shop.dto.ProductVO" parameterType="com.spboot.shop.dto.Admin_Paging">
-		 select * from (select * from (
-    	 select rownum as row_num, m.* from (select * from product order by pseq desc) m
-     	 ) where row_num &gt;= #{param1} 
-     	 ) where row_num &lt;= #{param2}
+	 	select * from 
+		(select * from (select rownum as row_num, product.* from 
+		(select * from product order by pseq desc) product where pname like'%'||#{param3}||'%' )
+		where row_num &gt;=#{param1} ) where row_num &lt;=#{param2} 
 	</select>
 	<select id="getProduct" resultType="com.spboot.shop.dto.ProductVO">
 		select * from product where pseq=#{param1}
